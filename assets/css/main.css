@@ -1,0 +1,72 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.my-icon {
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.my-icon-call {
+  background-image: url("../images/icon/icon-call.png");
+}
+
+.my-icon-local {
+  background-image: url("../images/icon/icon-local.png");
+}
+
+.my-icon-time {
+  background-image: url("../images/icon/icon-time.png");
+}
+
+header {
+  background-color: #1f2b6c;
+  width: 100%;
+  font-family: "Yeseva One";
+}
+header nav {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.info-web {
+  padding: 0 10%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-web--logo {
+  font-family: "Yeseva One";
+  text-transform: uppercase;
+  color: #159eec;
+}
+.info-web--logo span {
+  color: #1f2b6c;
+}
+.info-web--content {
+  display: flex;
+}
+.info-web__item {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

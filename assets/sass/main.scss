@@ -1,0 +1,68 @@
+@import "variables";
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+}
+button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.my-icon {
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.my-icon-call {
+    background-image: url("../images/icon/icon-call.png");
+}
+.my-icon-local {
+    background-image: url("../images/icon/icon-local.png");
+}
+.my-icon-time {
+    background-image: url("../images/icon/icon-time.png");
+}
+
+//header styles
+header {
+    background-color: $primary;
+    width: 100%;
+    nav {
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+    font-family: "Yeseva One";
+}
+
+.info-web {
+    padding: 0 10%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--logo {
+        font-family: "Yeseva One";
+        text-transform: uppercase;
+        span {
+            color: $primary;
+        }
+        color: $secondary;
+    }
+
+    &--content {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+}
