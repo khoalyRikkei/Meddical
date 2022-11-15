@@ -103,6 +103,12 @@ button {
   height: 9.5px;
 }
 
+.icon-x {
+  background-image: url("../images/icon/icon-x.png");
+  width: 20px;
+  height: 20px;
+}
+
 .social-group {
   display: flex;
   justify-content: center;
@@ -139,6 +145,14 @@ a {
 .btn--primary {
   color: #bfd2f8;
   background-color: #1f2b6c;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.display-none {
+  display: none;
 }
 
 .row {
@@ -237,30 +251,54 @@ header {
 
 /*---- start navbar ---*/
 .navbar {
-  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navbar--brand {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 0 5%;
 }
 .navbar__menu {
-  display: none;
-  gap: 20px;
-  height: 100%;
   align-items: center;
+  background-color: #bfd2f8;
+  width: 100%;
+  padding: 48px 5%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .navbar__menu li {
   list-style: none;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.navbar__menu li:hover {
+  background-color: #1f2b6c;
+}
+.navbar__menu li:hover a {
+  color: #fcfefe;
 }
 .navbar__menu a {
-  color: #fcfefe;
+  color: #1f2b6c;
+}
+.navbar__menu button {
+  width: 100%;
+  background-color: #1f2b6c;
+  color: #bfd2f8;
+  margin-top: 40px;
 }
 .navbar__feature {
   display: flex;
   gap: 30px;
   align-items: center;
-}
-.navbar__feature button {
-  display: none;
 }
 .navbar .info-web__logo--mobile {
   color: #fcfefe;
@@ -412,6 +450,12 @@ header {
 #care button {
   width: 100%;
   border-radius: 0 0 5px 5px;
+}
+
+/*---- End care ---*/
+/*---- Start info ---*/
+#info {
+  height: 500px;
 }
 
 /*# sourceMappingURL=main.css.map */

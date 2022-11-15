@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&family=Yeseva+One&display=swap");
 #slick-care {
   margin: 0 auto;
+  width: 100%;
 }
 #slick-care .slider__item {
   transform: scale(0.9);
-  opacity: 0.8;
   transition: all 300ms ease;
   bottom: 0;
   overflow: hidden;
@@ -27,6 +27,10 @@
 #slick-care .slick-dots li.slick-active button:before {
   color: #1f2b6c;
   opacity: 1;
+}
+#slick-care .slick-slider .slick-track {
+  transform: translateX(-90px);
+  transition: 1s ease-in-out;
 }
 
 /*# sourceMappingURL=slick.css.map */
