@@ -67,6 +67,18 @@ button {
   height: 24px;
 }
 
+.icon-eyes {
+  background-image: url("../images/icon/social/icon-eyes.png");
+  width: 16px;
+  height: 10px;
+}
+
+.icon-heart-3 {
+  background-image: url("../images/icon/social/icon-heart-3.png");
+  width: 16px;
+  height: 14px;
+}
+
 .icon-itg {
   background-image: url("../images/icon/social/icon-itg.png");
   width: 24px;
@@ -83,6 +95,12 @@ button {
   background-image: url("../images/icon/medical/icon-heart.png");
   width: 30px;
   height: 30px;
+}
+
+.icon-heart-2 {
+  background-image: url("../images/icon/medical/icon-heart-2.png");
+  width: 50px;
+  height: 44px;
 }
 
 .icon-cross {
@@ -109,6 +127,48 @@ button {
   height: 20px;
 }
 
+.icon-call-2 {
+  background-image: url("../images/icon/icon-call-2.png");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-local-2 {
+  background-image: url("../images/icon/icon-local.png");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-mail {
+  background-image: url("../images/icon/icon-mail.png");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-time-2 {
+  background-image: url("../images/icon/icon-time-2.png");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-calendar {
+  background-image: url("../images/icon/icon-calendar.png");
+  width: 50px;
+  height: 50px;
+}
+
+.icon-team {
+  background-image: url("../images/icon/icon-team.png");
+  width: 50px;
+  height: 50px;
+}
+
+.icon-cash {
+  background-image: url("../images/icon/icon-cash.png");
+  width: 50px;
+  height: 50px;
+}
+
 .social-group {
   display: flex;
   justify-content: center;
@@ -116,14 +176,26 @@ button {
 }
 
 .container {
-  padding: 0 10%;
+  max-width: 992px;
   width: 100%;
-  max-width: 1366px;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-mobile {
+  display: block;
+}
+
+.display-desktop {
+  display: none;
 }
 
 .btn {
@@ -151,10 +223,6 @@ a {
   font-weight: bold;
 }
 
-.display-none {
-  display: none;
-}
-
 .row {
   display: flex;
   width: 100%;
@@ -172,9 +240,19 @@ a {
   width: 50%;
 }
 
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+img {
+  width: 100%;
+}
+
 .card {
   border-radius: 5px;
   border: 1px solid #d0d4e1;
+  overflow: hidden;
 }
 .card__item {
   text-align: center;
@@ -182,9 +260,8 @@ a {
 }
 .card__item:hover {
   background-color: #1f2b6c;
-  border-radius: 5px;
-  color: #bfd2f8;
   outline: 1px solid #1f2b6c;
+  color: #bfd2f8;
 }
 .card__item:hover .icon {
   filter: grayscale(55%) opacity(60%) brightness(300%);
@@ -195,7 +272,6 @@ a {
   width: 100%;
   padding: 12px 0;
   border-radius: 0 0 5px 5px;
-  outline: 1px solid #1f2b6c;
 }
 
 .bg-primary {
@@ -216,7 +292,6 @@ a {
 .text-title--main {
   font-family: "Yeseva One";
   color: #1f2b6c;
-  width: 260px;
   margin: 0 auto;
   font-weight: normal;
   text-align: center;
@@ -243,10 +318,13 @@ a {
   align-items: center;
   color: #159eec;
 }
+.section__image {
+  width: 100%;
+}
 
 header {
-  background-color: #1f2b6c;
   width: 100%;
+  background-color: #1f2b6c;
 }
 
 /*---- start navbar ---*/
@@ -269,19 +347,18 @@ header {
   background-color: #bfd2f8;
   width: 100%;
   padding: 48px 5%;
-  align-items: center;
   text-align: center;
-  display: flex;
   flex-direction: column;
 }
 .navbar__menu li {
   list-style: none;
   width: 100%;
   padding: 10px 0;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 .navbar__menu li:hover {
   background-color: #1f2b6c;
+  border-radius: 50px;
 }
 .navbar__menu li:hover a {
   color: #fcfefe;
@@ -300,6 +377,9 @@ header {
   gap: 30px;
   align-items: center;
 }
+.navbar__feature button {
+  display: none;
+}
 .navbar .info-web__logo--mobile {
   color: #fcfefe;
   display: block;
@@ -309,11 +389,15 @@ header {
 }
 
 /*---- end navbar ---*/
+#book-bar {
+  display: none;
+}
+
 /*---- start info-web ---*/
 .info-web {
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: auto;
 }
@@ -356,6 +440,10 @@ header {
 /*---- start hero ---*/
 .hero {
   position: relative;
+  background-image: url("../images/hero/hero-banner.png");
+  width: 100%;
+  height: 375px;
+  background-size: cover;
 }
 .hero__content {
   width: 100%;
@@ -371,6 +459,9 @@ header {
 /*---- start services ---*/
 #services .section__content {
   padding: 0 5%;
+}
+#services .card {
+  border-radius: 5px 5px 0 0;
 }
 
 /*---- end services ---*/
@@ -395,19 +486,21 @@ header {
 }
 
 .form--book {
-  opacity: 1;
   border-radius: 5px;
   background-color: #1f2b6c;
 }
-.form--book > div {
+.form--book__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 16px 20px 12px;
   border-bottom: 1px solid #bfd2f8;
   color: #fcfefe;
   opacity: 0.6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   cursor: pointer;
+}
+.form--book__item.message {
+  align-items: flex-start;
 }
 .form--book input,
 .form--book textarea {
@@ -416,6 +509,7 @@ header {
   border: none;
   height: 100%;
   background-color: #1f2b6c;
+  padding: 0 20px;
 }
 .form--book ::placeholder {
   color: #fcfefe;
@@ -434,7 +528,7 @@ header {
 
 /*---- end services ---*/
 /*---- Start care ---*/
-#care .card {
+#doctors .card {
   text-align: center;
   border-radius: 0;
   background-color: #bfd2f8;
@@ -442,12 +536,12 @@ header {
   color: #1f2b6c;
   font-size: 18px;
 }
-#care .card div:nth-child(2) {
+#doctors .card div:nth-child(2) {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 8px;
 }
-#care button {
+#doctors button {
   width: 100%;
   border-radius: 0 0 5px 5px;
 }

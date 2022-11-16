@@ -1,44 +1,51 @@
-$('.slider-center').slick({
-	centerMode: true,
-	centerPadding: '16px',
-	slidesToShow: 1.67,
-	mobileFirst: true,
-	arrows: false,
-	dots: true,
-	respondTo: 'slider',
-	swipeToSlide: true,
-	autoPlay: true,
-	speed: 500,
-	responsive: [
-		{
-			breakpoint: 768,
-			settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '20px',
-				slidesToShow: 3,
-			},
-		},
-	],
+$(".slider-center").slick({
+    centerMode: true,
+    mobileFirst: true,
+    centerPadding: "16px",
+    slidesToShow: 1.67,
+    arrows: false,
+    dots: true,
+    autoPlay: true,
+    autoplaySpeed: 3000,
+    speed: 300,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                centerPadding: "20px",
+                centerMode: false,
+            },
+        },
+    ],
+});
+$(".slider-news").slick({
+    centerPadding: "0",
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    autoPlay: true,
+    autoplaySpeed: 3000,
+    speed: 300,
 });
 
 //my script
 
 function handleToggle(element) {
-	const menu = document.querySelector('.navbar__menu');
-	const toggleClose = document.querySelector('#toggle-close');
-	const toggleOpen = document.querySelector('#toggle-open');
-	if (element.id === 'toggle-open') {
-		toggleOpen.classList.add('display-none');
-		toggleClose.classList.remove('display-none');
-	} else {
-		toggleClose.classList.add('display-none');
-		toggleOpen.classList.remove('display-none');
-	}
-
-	if (menu.style.display !== 'flex') {
-		menu.style.display = 'flex';
-	} else {
-		menu.style.display = 'none';
-	}
+    const menu = document.querySelector(".navbar__menu");
+    const toggleClose = document.querySelector("#toggle-close");
+    const toggleOpen = document.querySelector("#toggle-open");
+    console.log(element.id);
+    if (menu.classList.value.includes("display-none")) {
+        toggleOpen.classList.add("display-none");
+        toggleClose.classList.remove("display-none");
+        menu.classList.remove("display-none");
+    } else {
+        toggleClose.classList.add("display-none");
+        toggleOpen.classList.remove("display-none");
+        menu.classList.add("display-none");
+    }
 }
