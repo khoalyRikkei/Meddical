@@ -9,7 +9,7 @@ body {
 }
 
 .display-mobile {
-  display: none;
+  display: none !important;
 }
 
 .col-lg-6 {
@@ -20,6 +20,11 @@ body {
 .col-lg-12 {
   flex: 0 0 auto;
   width: 100%;
+}
+
+.container {
+  margin: 0 5%;
+  margin: 0 auto;
 }
 
 .section {
@@ -164,6 +169,7 @@ body {
   align-items: center;
   padding: 20px;
   color: #1f2b6c;
+  cursor: pointer;
 }
 #book-bar div {
   background-color: #bfd2f8;
@@ -316,19 +322,16 @@ body {
   text-align: left;
   justify-content: center;
   gap: 10px;
+  color: #1f2b6c;
 }
 #contact .section__content .card__item__title {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #1f2b6c;
 }
 #contact .section__content .card__item__title p:first-child {
   text-transform: uppercase;
   font-weight: bold;
-}
-#contact .section__content .card__item__title:hover {
-  color: #bfd2f8;
 }
 #contact .section__content .card__item:hover {
   background-color: #1f2b6c;
@@ -336,5 +339,77 @@ body {
 }
 
 /*----- End Contact  -----*/
+/*----- End Footer  -----*/
+footer {
+  background-color: #1f2b6c;
+  padding: 0 5%;
+}
+footer .navbar {
+  flex-direction: row;
+  padding: 47px 0;
+  max-width: 1336px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 33px;
+  border-bottom: 1px solid #bfd2f8;
+}
+footer .navbar > * {
+  width: auto;
+  flex-direction: column;
+  text-align: left;
+  gap: 7px;
+  flex: 1;
+}
+footer .navbar > * .title {
+  margin-bottom: 13px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fcfefe;
+  line-height: 21px;
+}
+footer .navbar > * li {
+  padding: 0;
+}
+footer .navbar > * a {
+  color: #fcfefe;
+  font-size: 16px;
+}
+footer .navbar--brand {
+  display: flex;
+  flex-direction: column;
+  color: #bfd2f8;
+  max-width: 250px;
+  align-items: flex-start;
+  gap: 20px;
+  color: #fcfefe;
+}
+footer .navbar__feature div:last-child {
+  background-color: #bfd2f8;
+  border-radius: 5px;
+  padding: 14px 10px;
+  min-width: 270px;
+}
+footer .navbar__feature div:last-child input {
+  padding: 0;
+  margin-right: 24px;
+  height: 25px;
+  outline: none;
+}
+footer .navbar__feature div:last-child i {
+  cursor: pointer;
+}
+footer .footer--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 48px 0 76px;
+  color: #fcfefe;
+}
+
+/*----- End Footer  -----*/
 
 /*# sourceMappingURL=desktop.css.map */
