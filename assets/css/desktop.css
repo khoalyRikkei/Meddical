@@ -1,15 +1,6 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&family=Yeseva+One&display=swap");
 body {
   font-size: 18px;
-}
-
-.display-desktop {
-  display: block;
-}
-
-.display-mobile {
-  display: none !important;
 }
 
 .col-lg-6 {
@@ -28,13 +19,13 @@ body {
 }
 
 .section {
-  gap: 32px;
   margin-bottom: 64px;
 }
 .section__title {
   gap: 10px;
   max-width: 658px;
   margin: 0 auto;
+  margin-bottom: 64px;
 }
 .section__image {
   width: 100%;
@@ -44,6 +35,14 @@ body {
   object-fit: cover;
   max-height: 250px;
   object-position: top;
+}
+
+.display-desktop {
+  display: block;
+}
+
+.display-mobile {
+  display: none !important;
 }
 
 .info-web {
@@ -185,6 +184,9 @@ body {
 
 /*----- End book-bar  -----*/
 /*----- Start services -----*/
+#services .section__title {
+  margin-bottom: 64px;
+}
 #services .section__content {
   width: 100%;
   padding: 0;
@@ -204,24 +206,6 @@ body {
   font-size: 26px;
   text-align: left;
   font-weight: 500;
-}
-#services .section__content--main ul {
-  list-style: none;
-  list-style-position: inside;
-}
-#services .section__content--main ul > li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 16px;
-}
-#services .section__content--main ul > li::before {
-  content: "•";
-  color: #159eec;
-  font-weight: bold;
-  width: 20px;
-  font-size: 50px;
-  position: absolute;
-  left: 0;
 }
 #services .section__content--aside {
   flex: 3;
@@ -380,10 +364,16 @@ footer .navbar--brand {
   display: flex;
   flex-direction: column;
   color: #bfd2f8;
-  max-width: 250px;
   align-items: flex-start;
   gap: 20px;
   color: #fcfefe;
+}
+footer .navbar--brand .info-web__logo {
+  font-size: 36px;
+  color: #bfd2f8;
+}
+footer .navbar--brand > * {
+  max-width: 250px;
 }
 footer .navbar__feature div:last-child {
   background-color: #bfd2f8;
