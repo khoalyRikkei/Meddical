@@ -32,6 +32,18 @@ button {
   height: 30px;
 }
 
+.icon-calendar-2 {
+  background-image: url("../images/icon/icon-calendar-2.png");
+  width: 16px;
+  height: 16px;
+}
+
+.icon-people {
+  background-image: url("../images/icon/icon-people.png");
+  width: 16px;
+  height: 16px;
+}
+
 .icon-call-3 {
   background-image: url("../images/icon/icon-call-3.png");
   width: 50px;
@@ -642,6 +654,15 @@ ul.dots > li::before {
   font-size: 50px;
   position: absolute;
   left: 0;
+}
+
+.news-info-bar {
+  display: flex;
+  gap: 24px;
+}
+.news-info-bar--status {
+  display: flex;
+  gap: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
