@@ -17,6 +17,7 @@ body {
 .container {
     margin: 0 5%;
     margin: 0 auto;
+    padding: 0;
 }
 
 .section {
@@ -316,42 +317,6 @@ body {
 }
 /*----- End News  -----*/
 
-/*----- Start Contact  -----*/
-#contact {
-    .section__content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 64px 0;
-        .card__item {
-            background-color: $accent;
-            flex: 1;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
-            justify-content: center;
-            gap: 10px;
-            color: $primary;
-            &__title {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                p:first-child {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                }
-            }
-            &:hover {
-                background-color: $primary;
-                color: $accent;
-            }
-        }
-    }
-}
-/*----- End Contact  -----*/
-
 /*----- End Footer  -----*/
 
 footer {
@@ -436,3 +401,11 @@ footer {
 }
 
 /*----- End Footer  -----*/
+
+//news-info-bar
+.news-info-bar {
+    gap: 24px;
+    &--status {
+        gap: 24px;
+    }
+}

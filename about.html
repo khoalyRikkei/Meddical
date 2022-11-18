@@ -74,7 +74,9 @@
                     <!-- Navbar content -->
                     <div class="navbar__feature">
                         <div class="icon icon-search"></div>
-                        <button class="btn btn--rounded">Appointment</button>
+                        <button class="btn btn--rounded">
+                            <a href="./book-appointment.html">Appointment</a>
+                        </button>
                         <div
                             class="icon icon-bar"
                             onclick="handleToggle(this)"
@@ -94,7 +96,9 @@
                     <li><a href="doctors.html">Doctors</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <button class="btn btn--rounded">Appointment</button>
+                    <button class="btn btn--rounded">
+                        <a href="./book-appointment.html">Appointment</a>
+                    </button>
                 </ul>
             </nav>
         </header>
@@ -114,12 +118,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="line-bar">
+                    <div class="line-bar--start"></div>
+                    <div class="line-bar--center"></div>
+                    <div class="line-bar--end"></div>
+                </div>
             </div>
             <!-- End hero -->
             <div class="container">
                 <!-- Start section -->
                 <section class="section" id="introduce">
-                    <div class="section__image">
+                    <div class="section__image display-desktop">
                         <img
                             src="./assets/images/doctor-introduce.png"
                             alt=""
@@ -158,71 +167,77 @@
                     </div>
                 </section>
             </div>
-            <div class="section" id="introduce-2">
-                <div class="slick-custom">
-                    <div class="slider slider-one">
-                        <div class="slider__item">
-                            <div class="card">
-                                <div class="card__icon">
-                                    <i class="icon icon-quote"></i>
-                                </div>
-                                <div class="card__content">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Quisque placerat
-                                        scelerisque tortor ornare ornare.
-                                        Quisque placerat scelerisque felis vitae
-                                        tortor augue. Velit nascetur Consequat
-                                        faucibus porttitor enim et.
-                                    </p>
-                                    <hr />
-                                    <p>John Doe</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider__item">
-                            <div class="card">
-                                <div class="card__icon">
-                                    <i class="icon icon-quote"></i>
-                                </div>
-                                <div class="card__content">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Quisque placerat
-                                        scelerisque tortor ornare ornare.
-                                        Quisque placerat scelerisque felis vitae
-                                        tortor augue. Velit nascetur Consequat
-                                        faucibus porttitor enim et.
-                                    </p>
-                                    <hr />
-                                    <p>John Doe</p>
+
+            <div class="container container--full">
+                <!--  start banner - 2  -->
+                <div class="section" id="introduce-2">
+                    <div class="slick-custom">
+                        <div class="slider slider-one">
+                            <div class="slider__item">
+                                <div class="card">
+                                    <div class="card__icon">
+                                        <i class="icon icon-quote"></i>
+                                    </div>
+                                    <div class="card__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. Quisque
+                                            placerat scelerisque tortor ornare
+                                            ornare. Quisque placerat scelerisque
+                                            felis vitae tortor augue. Velit
+                                            nascetur Consequat faucibus
+                                            porttitor enim et.
+                                        </p>
+                                        <hr />
+                                        <p>John Doe</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="slider__item">
-                            <div class="card">
-                                <div class="card__icon">
-                                    <i class="icon icon-quote"></i>
+                            <div class="slider__item">
+                                <div class="card">
+                                    <div class="card__icon">
+                                        <i class="icon icon-quote"></i>
+                                    </div>
+                                    <div class="card__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. Quisque
+                                            placerat scelerisque tortor ornare
+                                            ornare. Quisque placerat scelerisque
+                                            felis vitae tortor augue. Velit
+                                            nascetur Consequat faucibus
+                                            porttitor enim et.
+                                        </p>
+                                        <hr />
+                                        <p>John Doe</p>
+                                    </div>
                                 </div>
-                                <div class="card__content">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Quisque placerat
-                                        scelerisque tortor ornare ornare.
-                                        Quisque placerat scelerisque felis vitae
-                                        tortor augue. Velit nascetur Consequat
-                                        faucibus porttitor enim et.
-                                    </p>
-                                    <hr />
-                                    <p>John Doe</p>
+                            </div>
+                            <div class="slider__item">
+                                <div class="card">
+                                    <div class="card__icon">
+                                        <i class="icon icon-quote"></i>
+                                    </div>
+                                    <div class="card__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. Quisque
+                                            placerat scelerisque tortor ornare
+                                            ornare. Quisque placerat scelerisque
+                                            felis vitae tortor augue. Velit
+                                            nascetur Consequat faucibus
+                                            porttitor enim et.
+                                        </p>
+                                        <hr />
+                                        <p>John Doe</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!--  End banner - 2  -->
 
-            <div class="container">
                 <!-- Start trust care -->
                 <section class="section" id="doctors">
                     <div class="section__title">
@@ -317,6 +332,8 @@
                     </div>
                 </section>
                 <!-- End trust care -->
+            </div>
+            <div class="container">
                 <!-- Start info -->
                 <section class="section display-mobile" id="info">
                     <div class="section__title">
@@ -800,7 +817,7 @@
         </main>
         <!-- Start footer -->
         <footer class="display-desktop">
-            <nav class="navbar container">
+            <nav class="navbar container container--full">
                 <div class="navbar--brand">
                     <h2 class="info-web__logo">Meddical</h2>
                     <div class="navbar__content">
@@ -809,7 +826,7 @@
                 </div>
                 <ul class="navbar__menu navbar__menu--column">
                     <div class="title">Important Links</div>
-                    <li><a href="">Appointment</a></li>
+                    <li><a href="./book-appointment.html">Appointment</a></li>
                     <li><a href="">Doctors</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">About us</a></li>
